@@ -88,7 +88,7 @@ https://docs.oracle.com/en/java/javase/16/docs/api/index.html
 
 ## Les mots clés JAVA, réserves.
 
-!(Mot reservé)[Resources/img_reserve.bmp]
+![Mot reservé](Resources/img_reserve.bmp)
 
 
 # Introduction Part 3

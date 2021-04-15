@@ -13,6 +13,16 @@
   * [TP 1 Verification de l'installation de son JDK](#tp-1-verification-de-l-installation-de-son-jdk)
   * [TP 1 Creation, compilation et execution d'une application JAVA](#tp-1-creation--compilation-et-execution-d-une-application-java)
 - [Types primitifs, opérateurs et instructions de contrôle de flux](#types-primitifs--op-rateurs-et-instructions-de-contr-le-de-flux)
+  * [Primitive](#primitive)
+  * [Declaration et initialisation d'une variable](#declaration-et-initialisation-d-une-variable)
+  * [Liste des opérteurs](#liste-des-op-rteurs)
+  * [Operations arithmétique et type casting](#operations-arithm-tique-et-type-casting)
+  * [Opérations sur les binaires](#op-rations-sur-les-binaires)
+  * [Relations (egale, superieur ...)](#relations--egale--superieur--)
+  * [Controle du flux avec **if/elseif/else**](#controle-du-flux-avec---if-elseif-else--)
+  * [Operation ternaire](#operation-ternaire)
+  * [Controle du flux avec **switch case**](#controle-du-flux-avec---switch-case--)
+  * [Tester une variable ou un calcule simplement avec **JShell**](#tester-une-variable-ou-un-calcule-simplement-avec---jshell--)
 
 
 <h1>ORACLE_JAVA_CERTIFICATION</h1>
@@ -381,4 +391,36 @@ On ne peut "convertir" directement un type primitif vers un autre **uniquement**
 
 ## Operations arithmétique et type casting
 
-![Opérateurs_2](./Resources/img_arith.PNG)
+![Arithmetic](./Resources/img_arith.PNG)
+![Arithmetic_2](./Resources/img_arith2.PNG)
+
+## Opérations sur les binaires
+
+![Binary](./Resources/img_binary.PNG)
+![Binary](./Resources/img_binary_2.PNG)
+
+## Relations (egale, superieur ...)
+
+![Logic](./Resources/img_operator3.PNG)
+![Logic](./Resources/img_operator4.PNG)
+
+## Controle du flux avec **if/elseif/else**
+
+![If/Else](./Resources/flow.PNG)
+
+## Operation ternaire
+
+![Ternaire](./Resources/ternaire.PNG)
+
+##  Controle du flux avec **switch case**
+
+![Switch](./Resources/switch.PNG)
+
+##  Tester une variable ou un calcule simplement avec **JShell**
+
+![Switch](./Resources/jshell.PNG)
+
+
+
+
+

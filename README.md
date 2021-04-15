@@ -3,11 +3,17 @@
 # Introduction Part 1
 
 JAVA SE est la base suivie de :
+
 Java EE : le plus (haut niveau) complet pour les entreprises
+
 JAVA MP = Micro profil (ex micro service)
+
 JAVA ME = electronic device
+
 JAVA CARD = exemple carte de crédit
-Les fichier avec l'extension .java contiennent le *Code source*.
+
+Les fichier avec l'extension .java contiennent le **Code source**.
+
 Pour compiler du code java cad file.java faire la commande
 
 ```cmd
@@ -15,7 +21,9 @@ javac
 ```
 
 Le fichier .java génèrera le fichier .class
-Les fichiers avec l'extension .class contiennent le *Code source compilé* dis binary code
+
+
+Les fichiers avec l'extension .class contiennent le **Code source compilé** dis binary code
 
 # Introduction Part 2
 
@@ -46,5 +54,35 @@ class Dog {
     }
 }
 ```
+
+**L’héritage** permet à une class spécifiques d’hériter d’attributs et méthode décrite dans la classe mère.
+Les types parents sont appelées **superclass**. Les sous-types sont appelés des **sous-classes**.
+L’idée est de faire du code réutilisable par un ensemble de classe.
+
+Exemple :
+
+```java
+class Animal extends OrganismeVivant {
+	// generic attributes et comportements
+}
+
+class Dog extends Animal {
+	//specifique attributes et comportements
+}
+
+
+```
+
+Un grand nombre de classes sont déjà utilisées par JDK.
+Exemples :
+* Types de datas basics : **String, LocalDateTime, BigDecimal**.
+* Pour manipuler des collections : **Enumeration, ArrayList, HashMap**.
+* Pour gérer un comportement générique et effectuer des actions système : **System, Object, Class**.
+* Pour exécuter des opérations sur les input et output : **FileInputStream, FileOutputStream**.
+* Beaucoup d’autres API (Application Programming Interface) sont utilisées pour : accès base de données, gérer la concurrence,
+activer les communications réseau, exécuter des scripts, gestions des transactions, sécurité, connexion, construction d’interface graphique.
+
+
+
 
 # Introduction Part 3

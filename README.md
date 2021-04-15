@@ -8,7 +8,6 @@ Documentation java11
 
 https://docs.oracle.com/en/java/javase/11/
 
-
 # Introduction Part 1
 
 JAVA SE est la base suivie de :
@@ -162,13 +161,13 @@ class Dog {
 
 }
 ```
-La classe et package représentés ci-dessus devra être sauvegardé dans le dossier :**/somepath/com/oracle/demos/animals/Dog.java**
 
+La classe et package représentés ci-dessus devra être sauvegardé dans le dossier :**
+/somepath/com/oracle/demos/animals/Dog.java**
 
 ## Accéder aux classes à travers les packages
 
 ![Case Sensitive](./Resources/img_packager.PNG)
-
 
 Les imports sont ignorés du compilateur.
 
@@ -179,14 +178,14 @@ Les imports sont ignorés du compilateur.
 * <default> Visible seulement dans la classe d’un même package.
 * Private : Visible uniquement à l’intérieur de ça class.
 
-
 Exemple :
 
 ![Case Sensitive](./Resources/img_acces.PNG)
- 
+
 ## Création de la classe applicative Main
 
-La class Main est le point d’entrée de notre programme. La machine virtuel Java recherchera et exécutera cette méthode en première.
+La class Main est le point d’entrée de notre programme. La machine virtuel Java recherchera et exécutera cette méthode
+en première.
 
 Exemple :
 
@@ -196,17 +195,19 @@ Exemple :
 
 Compilez les classes avec le compilateur **javac** java.
 
-Le paramètre **-classpath ou -cp** pointe vers les emplacements d'autres classes qui peuvent être nécessaires pour compiler votre code.
-Le paramètre **-d** pointe vers un chemin pour stocker le résultat de la compilation. (Le compilateur crée des sous-dossiers de package avec des fichiers de classe compilés dans ce chemin.).
-Le reste fournir le chemin vers le code source.
+Le paramètre **-classpath ou -cp** pointe vers les emplacements d'autres classes qui peuvent être nécessaires pour
+compiler votre code. Le paramètre **-d** pointe vers un chemin pour stocker le résultat de la compilation. (Le
+compilateur crée des sous-dossiers de package avec des fichiers de classe compilés dans ce chemin.). Le reste fournir le
+chemin vers le code source.
 
 Exemple pour compiler le ficher ci dessous:
 
 ```java
 package demos;
-public class Whatever{
-    public static void main (String[] args){
-         // programm execution starts here
+
+public class Whatever {
+    public static void main(String[] args) {
+        // programm execution starts here
     }
 }
 
@@ -224,24 +225,26 @@ Exécutez le programme à l'aide de la machine virtuelle Java exécutable Java (
 
 Spécifiez **-classpath ou -cp** pour pointer vers les dossiers où se trouvent vos classes.
 
-Spécifiez le nom de classe complet. **Utilisez le préfixe de package** n'utilisez pas l'extension .class.
-Fournissez une **liste de paramètres** séparés par des espaces après le nom de la classe.
+Spécifiez le nom de classe complet. **Utilisez le préfixe de package** n'utilisez pas l'extension .class. Fournissez
+une **liste de paramètres** séparés par des espaces après le nom de la classe.
 
 Acces aux paramètres de ligne de commande:
+
 * Utilisez un objet tableau pour accéder aux paramètres.
 * L'index du tableau commence à 0 (premier paramètre).
 
-Depuis java 11, il est également possible de réexécuter du code source à un seul fichier comme s'il s'agissait d'une classe compilée.
-JVM interprétera votre code, mais aucun fichier de classe compilé ne sera créé.
+Depuis java 11, il est également possible de ré exécuter du code source à un seul fichier comme s'il s'agissait d'une
+classe compilée. JVM interprétera votre code, mais aucun fichier de classe compilé ne sera créé.
 
-Exemple compilation puis execution du programme ci-ddessous
+Exemple compilation puis execution du programme ci-dessous
 
 ```java
 package demos;
-public class Whatever{
-    public static void main(String[] args){
+
+public class Whatever {
+    public static void main(String[] args) {
         String param1 = args[1];
-        System.out.println("Hello "+param1);
+        System.out.println("Hello " + param1);
     }
 }
 ```
@@ -290,5 +293,54 @@ Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.10+8-LTS-162, mixed mode)
 ```
 
 Installation jdk java11 https://www.oracle.com/fr/java/technologies/javase-jdk11-downloads.html
+
+# TP 1 Creation, compilation et execution d'une application JAVA
+
+* Creation class
+
+```java
+package labs;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello " + args[0]);
+    }
+}
+```
+
+* Compilation
+
+```bash
+$ javac -d ./classes ./src/labs/HelloWorld.java
+```
+
+Cela aura pour effet de creer un dossier classes avec le code compiler /labs/HelloWorld.class.
+
+* Consulter le contenu du dossier de compilation
+
+```bash
+$ ls -alR ./classes
+
+./classes:
+total 0
+drwxr-xr-x 1 ruffi 197609 0 Apr 15 12:31 .
+drwxr-xr-x 1 ruffi 197609 0 Apr 15 12:31 ..
+drwxr-xr-x 1 ruffi 197609 0 Apr 15 12:31 labs
+
+./classes/labs:
+total 4
+drwxr-xr-x 1 ruffi 197609   0 Apr 15 12:31 .
+drwxr-xr-x 1 ruffi 197609   0 Apr 15 12:31 ..
+-rw-r--r-- 1 ruffi 197609 872 Apr 15 12:31 HelloWorld.class
+
+
+```
+
+* Execution du programme
+
+```bash
+$ java -cp ./classes labs.HelloWorld "Niels Bohr"
+Hello Niels Bohr
+```
 
 

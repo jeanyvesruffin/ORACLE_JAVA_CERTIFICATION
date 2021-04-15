@@ -381,4 +381,4 @@ On ne peut "convertir" directement un type primitif vers un autre **uniquement**
 
 ## Operations arithmétique et type casting
 
-![Arithmetique](./Resources/img)
+![Opérateurs_2](./Resources/img_arith.PNG)

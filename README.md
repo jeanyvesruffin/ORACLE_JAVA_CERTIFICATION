@@ -182,3 +182,94 @@ La class Main est le point d’entrée de notre programme. La machine virtuel Ja
 Exemple :
 
 ![Case Sensitive](./Resources/img_main.PNG)
+
+## Compilation du programme java
+
+Compilez les classes avec le compilateur **javac** java.
+
+Le paramètre **-classpath ou -cp** pointe vers les emplacements d'autres classes qui peuvent être nécessaires pour compiler votre code.
+Le paramètre **-d** pointe vers un chemin pour stocker le résultat de la compilation. (Le compilateur crée des sous-dossiers de package avec des fichiers de classe compilés dans ce chemin.).
+Le reste fournir le chemin vers le code source.
+
+Exemple pour compiler le ficher ci dessous:
+
+```java
+package demos;
+public class Whatever{
+    public static void main (String[] args){
+         // programm execution starts here
+    }
+}
+
+```
+
+La commande de compilation pour avoir le resultat dans le dossier /project/classes/demos/Whatever.class sera :
+
+```cmd
+javac -cp /project/classes -d /project/classes /project/sources/demos/Whatever.java
+```
+
+## Execution du programme java
+
+Exécutez le programme à l'aide de la machine virtuelle Java exécutable Java (JVM).
+
+Spécifiez **-classpath ou -cp** pour pointer vers les dossiers où se trouvent vos classes.
+
+Spécifiez le nom de classe complet. **Utilisez le préfixe de package** n'utilisez pas l'extension .class.
+Fournissez une **liste de paramètres** séparés par des espaces après le nom de la classe.
+
+Acces aux paramètres de ligne de commande:
+* Utilisez un objet tableau pour accéder aux paramètres.
+* L'index du tableau commence à 0 (premier paramètre).
+
+Depuis java 11, il est également possible de réexécuter du code source à un seul fichier comme s'il s'agissait d'une classe compilée.
+JVM interprétera votre code, mais aucun fichier de classe compilé ne sera créé.
+
+Exemple compilation puis execution du programme ci-ddessous
+
+```java
+package demos;
+public class Whatever{
+    public static void main(String[] args){
+        String param1 = args[1];
+        System.out.println("Hello "+param1);
+    }
+}
+```
+
+```cmd
+java -cp /project/classes demos.Whatever Jo John
+
+// Resultat
+Hello John
+```
+
+## Les commentaires et la java documentatiaon
+
+Commentaire sur une ligne // Comment here
+
+Commenter un bloc /* Comment here */
+
+Creer de documentation pour java doc
+
+```java
+/**
+ * The {@code Whatever} class
+ * representataions d'un exemple de documentation
+ * @version 1.0
+ * @author ruffin
+ */
+
+```
+
+Génération de la documentation HTML java doc
+
+```cmd
+javadoc -d <documentation path>
+        -sourcepath <source code path>
+        -subpackages <name of the root package>
+```
+
+# TP 1 Verification de l'installation de son JDK
+
+

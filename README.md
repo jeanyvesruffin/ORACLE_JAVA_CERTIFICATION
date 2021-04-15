@@ -372,4 +372,13 @@ Hello Niels Bohr
 
 ![Declaration de variables](./Resources/img_variables.PNG)
 
+On ne peut "convertir" directement un type primitif vers un autre **uniquement** dans le cas ou d'une élévation exemple convertir un int en long fonctionne mais l'inverse non.
 
+## Liste des opérteurs
+
+![Opérateurs](./Resources/img_list_operators.PNG)
+![Opérateurs_2](./Resources/img_operator2.PNG)
+
+## Operations arithmétique et type casting
+
+![Arithmetique](./Resources/img)

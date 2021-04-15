@@ -1,4 +1,21 @@
-# ORACLE_JAVA_CERTIFICATION
+- [Introduction](#introduction)
+  * [Introduction Part 1](#introduction-part-1)
+  * [Introduction Part 2](#introduction-part-2)
+    + [Java est sensible à la casse](#java-est-sensible---la-casse)
+  * [Introduction Part 3](#introduction-part-3)
+    + [Règles de syntaxes](#r-gles-de-syntaxes)
+    + [Définition d’une classe](#d-finition-d-une-classe)
+    + [Accéder aux classes à travers les packages](#acc-der-aux-classes---travers-les-packages)
+    + [Création de la classe applicative Main](#cr-ation-de-la-classe-applicative-main)
+    + [Compilation du programme java](#compilation-du-programme-java)
+    + [Execution du programme java](#execution-du-programme-java)
+    + [Les commentaires et la java documentatiaon](#les-commentaires-et-la-java-documentatiaon)
+  * [TP 1 Verification de l'installation de son JDK](#tp-1-verification-de-l-installation-de-son-jdk)
+  * [TP 1 Creation, compilation et execution d'une application JAVA](#tp-1-creation--compilation-et-execution-d-une-application-java)
+- [Types primitifs, opérateurs et instructions de contrôle de flux](#types-primitifs--op-rateurs-et-instructions-de-contr-le-de-flux)
+
+
+<h1>ORACLE_JAVA_CERTIFICATION</h1>
 
 Documentation cours de certification
 
@@ -8,7 +25,9 @@ Documentation java11
 
 https://docs.oracle.com/en/java/javase/11/
 
-# Introduction Part 1
+# Introduction 
+
+## Introduction Part 1
 
 JAVA SE est la base suivie de :
 
@@ -32,7 +51,7 @@ Le fichier .java génèrera le fichier .class
 
 Les fichiers avec l'extension .class contiennent le **Code source compilé** dis binary code
 
-# Introduction Part 2
+## Introduction Part 2
 
 On crée des classes, dans lesquelles se trouvent les déclarations de variables, des opérations, algorithme, méthodes ...
 Toutes les actions que peuvent réaliser une classe.
@@ -94,17 +113,17 @@ Documentations API JAVA :
 
 https://docs.oracle.com/en/java/javase/16/docs/api/index.html
 
-## Les mots clés JAVA, réserves.
+### Les mots clés JAVA, réserves.
 
 ![Mot reservé](./Resources/img_reserve.bmp)
 
-## Java est sensible à la casse
+### Java est sensible à la casse
 
 ![Case Sensitive](./Resources/img_case.bmp)
 
-# Introduction Part 3
+## Introduction Part 3
 
-## Règles de syntaxes
+### Règles de syntaxes
 
 Toutes les instructions java doivent être terminées par le symbole ‘ ; ’.
 
@@ -135,7 +154,7 @@ class Dog {
 }
 ```
 
-## Définition d’une classe
+### Définition d’une classe
 
 Le nom de la classe est généralement représenté par un ou plusieurs noms. Exemples : Dog, SabreLaser, Person …
 
@@ -165,13 +184,13 @@ class Dog {
 La classe et package représentés ci-dessus devra être sauvegardé dans le dossier :**
 /somepath/com/oracle/demos/animals/Dog.java**
 
-## Accéder aux classes à travers les packages
+### Accéder aux classes à travers les packages
 
 ![Case Sensitive](./Resources/img_packager.PNG)
 
 Les imports sont ignorés du compilateur.
 
-## Utilisation de modificateur d’accès
+### Utilisation de modificateur d’accès
 
 * Public : Visible par toutes les autres class.
 * Protected : Visible par les classes se trouvant dans le même package ou sous package.
@@ -182,7 +201,7 @@ Exemple :
 
 ![Case Sensitive](./Resources/img_acces.PNG)
 
-## Création de la classe applicative Main
+### Création de la classe applicative Main
 
 La class Main est le point d’entrée de notre programme. La machine virtuel Java recherchera et exécutera cette méthode
 en première.
@@ -191,7 +210,7 @@ Exemple :
 
 ![Case Sensitive](./Resources/img_main.PNG)
 
-## Compilation du programme java
+### Compilation du programme java
 
 Compilez les classes avec le compilateur **javac** java.
 
@@ -219,7 +238,7 @@ La commande de compilation pour avoir le resultat dans le dossier /project/class
 javac -cp /project/classes -d /project/classes /project/sources/demos/Whatever.java
 ```
 
-## Execution du programme java
+### Execution du programme java
 
 Exécutez le programme à l'aide de la machine virtuelle Java exécutable Java (JVM).
 
@@ -256,7 +275,7 @@ java -cp /project/classes demos.Whatever Jo John
 Hello John
 ```
 
-## Les commentaires et la java documentatiaon
+### Les commentaires et la java documentatiaon
 
 Commentaire sur une ligne // Comment here
 
@@ -282,7 +301,7 @@ javadoc -d <documentation path>
         -subpackages <name of the root package>
 ```
 
-# TP 1 Verification de l'installation de son JDK
+## TP 1 Verification de l'installation de son JDK
 
 ```cmd
 java -version
@@ -294,7 +313,7 @@ Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.10+8-LTS-162, mixed mode)
 
 Installation jdk java11 https://www.oracle.com/fr/java/technologies/javase-jdk11-downloads.html
 
-# TP 1 Creation, compilation et execution d'une application JAVA
+## TP 1 Creation, compilation et execution d'une application JAVA
 
 * Creation class
 
@@ -343,4 +362,7 @@ $ java -cp ./classes labs.HelloWorld "Niels Bohr"
 Hello Niels Bohr
 ```
 
+# Types primitifs, opérateurs et instructions de contrôle de flux
+
+## 
 

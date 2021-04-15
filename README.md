@@ -364,5 +364,12 @@ Hello Niels Bohr
 
 # Types primitifs, opérateurs et instructions de contrôle de flux
 
-## 
+## Primitive
+
+![primitive number](./Resources/img_primitive.PNG)
+
+## Declaration et initialisation d'une variable
+
+![Declaration de variables](./Resources/img_variables.PNG)
+
 

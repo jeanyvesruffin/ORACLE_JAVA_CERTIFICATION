@@ -1,5 +1,14 @@
 # ORACLE_JAVA_CERTIFICATION
 
+Documentation cours de certification
+
+https://learning.oracle.com/player/play?in_sessionid=500188244353JJ19&classroom_id=113880473
+
+Documentation java11
+
+https://docs.oracle.com/en/java/javase/11/
+
+
 # Introduction Part 1
 
 JAVA SE est la base suivie de :
@@ -271,5 +280,12 @@ javadoc -d <documentation path>
 ```
 
 # TP 1 Verification de l'installation de son JDK
+
+```cmd
+java -version
+
+```
+
+Installation jdk java11 https://www.oracle.com/fr/java/technologies/javase-jdk11-downloads.html
 
 

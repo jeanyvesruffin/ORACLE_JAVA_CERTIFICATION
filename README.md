@@ -82,7 +82,13 @@ Exemples :
 * Beaucoup d’autres API (Application Programming Interface) sont utilisées pour : accès base de données, gérer la concurrence,
 activer les communications réseau, exécuter des scripts, gestions des transactions, sécurité, connexion, construction d’interface graphique.
 
+Documentations API JAVA :
 
+https://docs.oracle.com/en/java/javase/16/docs/api/index.html
+
+## Les mots clés JAVA, réserves.
+
+!(Mot reservé)[Resources/img_reserve.bmp]
 
 
 # Introduction Part 3

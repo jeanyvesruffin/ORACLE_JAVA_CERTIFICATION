@@ -284,6 +284,9 @@ javadoc -d <documentation path>
 ```cmd
 java -version
 
+java version "11.0.10" 2021-01-19 LTS
+Java(TM) SE Runtime Environment 18.9 (build 11.0.10+8-LTS-162)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.10+8-LTS-162, mixed mode)
 ```
 
 Installation jdk java11 https://www.oracle.com/fr/java/technologies/javase-jdk11-downloads.html

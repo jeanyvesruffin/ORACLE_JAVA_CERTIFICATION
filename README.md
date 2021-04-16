@@ -420,7 +420,25 @@ On ne peut "convertir" directement un type primitif vers un autre **uniquement**
 
 ![Switch](./Resources/jshell.PNG)
 
+# Text, Date, Time et objet numérique
 
+## String et StringBuilder
 
+![String](./Resources/img_string.PNG)
+![String](./Resources/img_string2.PNG)
+![String](./Resources/img_string3.PNG)
+![String](./Resources/img_string4.PNG)
 
+## Wrapper classes pour primitives
+
+![Wrapper](./Resources/wrapper.png)
+![Wrapper](./Resources/wrapper1.png)
+
+## Enchainement de méthodes
+
+![Wrapper](./Resources/chain.PNG)
+
+##Date local et temps
+
+![Wrapper](./Resources/date.PNG)
 

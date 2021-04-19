@@ -424,6 +424,9 @@ On ne peut "convertir" directement un type primitif vers un autre **uniquement**
 
 ## String et StringBuilder
 
+String est immuable, cad , recreer un espace memoire avec un nouveau contenu a chaque modification du String.
+StringBuilder et mutable, cad que nous modifions le contenu a une adresse memoire contenant le string.
+
 ![String](./Resources/img_string.PNG)
 ![String](./Resources/img_string2.PNG)
 ![String](./Resources/img_string3.PNG)
@@ -431,14 +434,37 @@ On ne peut "convertir" directement un type primitif vers un autre **uniquement**
 
 ## Wrapper classes pour primitives
 
+Le wrapper permet d'appliquer des capacités orientées objet aux primitive.
+
 ![Wrapper](./Resources/wrapper.png)
 ![Wrapper](./Resources/wrapper1.png)
 
 ## Enchainement de méthodes
 
-![Wrapper](./Resources/chain.PNG)
+![Chain](./Resources/chain.PNG)
 
-##Date local et temps
+## Date local et temps
 
-![Wrapper](./Resources/date.PNG)
+![Date](./Resources/date.PNG)
+![Date](./Resources/date2.PNG)
+![Date](./Resources/instant.PNG)
 
+## Zone Date et temps
+
+![Zone](./Resources/zone.PNG)
+![Zone](./Resources/zone2.PNG)
+
+## Format
+
+![Format](./Resources/format.PNG)
+![Format](./Resources/format1.PNG)
+
+## Ressource Bundle
+
+![bundle](./Resources/bundle.PNG)
+![bundle](./Resources/bundle1.PNG)
+![bundle](./Resources/format_bundle.PNG)
+
+## Classes et Objects
+
+![UML](./Resources/uml.PNG)

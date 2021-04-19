@@ -1,6 +1,6 @@
 # QUIZZ
 
-## QUIZZ 1
+## QUIZZ 1 Variable
 
 Quel est un nom de variable non valide?
 * $_exceptionValue
@@ -87,3 +87,41 @@ What would be printed?
 * 2
 
 Réponse : 3
+
+## QUIZZ 2 Text, Date, Time, and Numeric Objects
+
+What must you use to apply object-oriented capabilities to primitives?
+
+* StringBuilder
+* Class object
+* Class casting
+* Wrapper classes
+* Reflection Classes
+
+Réponse : Wrapper classes
+
+Which statements are true about StringBuilder? (Choose three)
+
+* StringBuilder objects automatically expand capacity as needed.
+* You can instantiate a StringBuilder with a predefined content or capacity.
+* StringBuilder objects are mutable.
+* StringBuilder objects are thread-safe.
+
+Réponses: * StringBuilder objects automatically expand capacity as needed.* You can instantiate a StringBuilder with a predefined content or capacity.* StringBuilder objects are mutable.
+
+Which statement is not true about Strings in Java?
+
+* Always creates a single copy of each string literal.
+* Strings represent a sequence of characters.
+* Strings allow you to append text.
+* String is a class.
+
+Réponse: Strings allow you to append text.
+
+Which statement is NOT true about Formatter classes?
+* They are used to parse text.
+* They work with messages, numbers, date, and time values.
+* They work with only objects, but not primitives.
+* They are used to format text.
+
+Réponse: They work with only objects, but not primitives.
